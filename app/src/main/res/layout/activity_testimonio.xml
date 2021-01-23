@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityHome">
+
+    <androidx.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.support.v7.widget.Toolbar
+            android:id="@+id/toolbartestimonio"
+            style="@style/MyToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/testimonios"
+            app:titleTextAppearance="@style/AppTheme.Title"
+            app:titleTextColor="@android:color/white" />
+    </androidx.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/includetestimonio"
+        layout="@layout/fragment_testimonios" />
+</androidx.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/padding_Top_redes"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/buttonshapebordes"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eproundie"
+        android:text="@string/conocenos"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_activity_redes"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/img_button_linear"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/btn_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/img_button_linear"
+            android:src="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/btn_youtube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/img_button_linear"
+            android:src="@drawable/youtube" />
+
+        <ImageView
+            android:id="@+id/btn_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/img_button_linear"
+            android:src="@drawable/whatsapp" />
+
+        <ImageView
+            android:id="@+id/btn_playstore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/img_button_linear"
+            android:src="@drawable/playstore" />
+
+        <ImageView
+            android:id="@+id/btn_buzon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/img_button_linear"
+            android:src="@drawable/sugerencia" />
+    </LinearLayout>
+</LinearLayout>

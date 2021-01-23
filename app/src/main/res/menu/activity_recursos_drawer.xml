@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <group xmlns:n1="http://schemas.android.com/apk/res/android"
+        n1:checkableBehavior="single">
+        <item
+            n1:id="@+id/nav_logout"
+            n1:icon="@drawable/ic_menu_close_clear_cancel"
+            n1:title="Salir" />
+    </group>
+</menu>

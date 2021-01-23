@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:showIn="@layout/activity_cursos">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="@font/eproundie"
+        android:text="¿Qué quieres estudiar hoy?"
+        android:textColor="@color/txt_cardCursos"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFacultades"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="10dp"
+        android:orientation="horizontal" />
+
+<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCarreras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</LinearLayout>

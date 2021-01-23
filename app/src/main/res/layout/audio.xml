@@ -1,0 +1,155 @@
+<android.widget.RelativeLayout
+    xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:n2="http://schemas.android.com/apk/res-auto"
+    xmlns:n3="http://schemas.android.com/apk/res-auto"
+    xmlns:n4="http://schemas.android.com/apk/res-auto"
+    xmlns:n5="http://schemas.android.com/apk/res-auto"
+    xmlns:n6="http://schemas.android.com/apk/res-auto"
+    xmlns:n7="http://schemas.android.com/apk/res-auto"
+    xmlns:n8="http://schemas.android.com/apk/res-auto"
+    xmlns:n9="http://schemas.android.com/apk/res-auto"
+    xmlns:n10="http://schemas.android.com/apk/res-auto"
+    xmlns:n11="http://schemas.android.com/apk/res-auto"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent">
+
+    <ImageButton
+        n1:id="@+id/imageButton4"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignTop="@+id/imageButton3"
+        n1:layout_marginLeft="7.0dip"
+        n1:layout_toRightOf="@+id/imageButton3"
+        n1:background="@color/colorPrimary"
+        n1:padding="2.0dip"
+        n2:srcCompat="@drawable/ic_menu_slideshow" />
+
+    <ImageButton
+        n1:id="@id/imageButton3"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignLeft="@+id/audio_descripcion"
+        n1:layout_alignTop="@+id/textView5"
+        n1:background="@color/colorPrimary"
+        n1:padding="2.0dip"
+        n3:srcCompat="@drawable/ic_menu_share" />
+
+    <RadioButton
+        n1:id="@+id/audio_titulo"
+        n1:layout_width="258.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentTop="true"
+        n1:layout_marginLeft="8.0dip"
+        n1:layout_marginTop="8.0dip"
+        n1:checked="true"
+        n1:shadowColor="@color/colorAccent"
+        n1:text="Un audio que nunca habrás oido"
+        n1:textColor="@color/text"
+        n1:textSize="15.0dip"
+        n4:layout_constraintEnd_toEndOf="parent"
+        n4:layout_constraintEnd_toStartOf="@+id/switch5"
+        n4:layout_constraintHorizontal_bias="0.025"
+        n4:layout_constraintLeft_toLeftOf="parent"
+        n4:layout_constraintStart_toStartOf="parent"
+        n4:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        n1:id="@+id/ButtonPlayStop"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentLeft="true"
+        n1:layout_below="@id/audio_titulo"
+        n1:layout_marginTop="8.0dip"
+        n1:text="Reproducir"
+        n1:textSize="10.0pt"
+        n1:textStyle="bold"
+        n5:layout_constraintTop_toBottomOf="@id/audio_titulo" />
+
+    <SeekBar
+        n1:id="@+id/SeekBar01"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_below="@id/ButtonPlayStop"
+        n1:layout_marginTop="1.0dip"
+        n1:background="@android:color/darker_gray"
+        n6:layout_constraintHorizontal_bias="0.0"
+        n6:layout_constraintLeft_toLeftOf="parent"
+        n6:layout_constraintRight_toRightOf="parent"
+        n6:layout_constraintTop_toBottomOf="@id/ButtonPlayStop" />
+
+    <TextView
+        n1:id="@id/audio_descripcion"
+        n1:layout_width="250.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_alignLeft="@id/audio_titulo"
+        n1:layout_alignRight="@+id/imageButton"
+        n1:layout_below="@+id/imageButton"
+        n1:layout_marginTop="8.0dip"
+        n1:text="25 reproducciones\n\nCARLOS EDUARDO CASTELLANOS\nLa riqueza está al alcance de todos si sabemos estar donde fluye el dinero"
+        n1:textColor="@color/hint"
+        n1:textSize="10.0dip"
+        n7:layout_constraintLeft_toLeftOf="parent"
+        n7:layout_constraintTop_toBottomOf="@+id/switch4" />
+
+    <CheckBox
+        n1:id="@+id/switch1"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_above="@id/ButtonPlayStop"
+        n1:layout_alignParentRight="true"
+        n1:layout_marginRight="8.0dip"
+        n1:checked="true"
+        n1:shadowColor="@color/colorAccent"
+        n1:text="Favorito "
+        n1:textColor="@color/colorPrimary"
+        n1:textSize="10.0dip"
+        n8:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        n1:id="@id/imageButton"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentRight="true"
+        n1:layout_below="@id/SeekBar01"
+        n1:layout_marginRight="8.0dip"
+        n1:layout_marginTop="8.0dip"
+        n1:background="@color/colorPrimary"
+        n1:padding="2.0dip"
+        n9:srcCompat="@drawable/ic_thumb_up_black_24dp" />
+
+    <TextView
+        n1:id="@id/textView5"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignTop="@id/imageButton"
+        n1:layout_marginRight="7.0dip"
+        n1:layout_toLeftOf="@id/imageButton"
+        n1:text="120"
+        n1:textColor="@color/colorPrimary"
+        n1:textSize="16.0dip" />
+
+    <CheckBox
+        n1:id="@id/switch4"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_below="@id/SeekBar01"
+        n1:layout_marginRight="8.0dip"
+        n1:layout_marginTop="3.0dip"
+        n1:layout_toLeftOf="@id/textView5"
+        n1:checked="false"
+        n1:shadowColor="@color/colorAccent"
+        n1:text="Descargar"
+        n1:textColor="@color/colorPrimary"
+        n1:textSize="10.0dip"
+        n10:layout_constraintRight_toLeftOf="@id/textView5"
+        n10:layout_constraintTop_toBottomOf="@id/imageButton" />
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0dip"
+        n1:layout_alignParentLeft="true"
+        n1:layout_below="@id/audio_descripcion"
+        n1:layout_marginTop="4.0dip"
+        n1:background="#fff2f2f2"
+        n11:layout_constraintTop_toBottomOf="@id/audio_descripcion" />
+</android.widget.RelativeLayout>

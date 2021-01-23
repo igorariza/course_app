@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/carNombreCarrera"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="6dp"
+    android:background="@color/card"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccentTransparent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txt_nombreCarera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txtCardCarrera"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/eproundie"
+                android:padding="10dp"
+                android:text="@string/nombre_curso_nuevo" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.support.constraint.ConstraintLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent">
+
+    <VideoView
+        n1:id="@+id/video_fullscreen"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_alignParentLeft="true"
+        n1:layout_gravity="center" />
+
+    <androidx.support.design.widget.FloatingActionButton xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@id/fab"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_margin="@dimen/fab_margin"
+        n1:layout_marginTop="4.0dip"
+        n2:backgroundTint="@color/colorAccentTransparent"
+        n2:layout_constraintStart_toStartOf="parent"
+        n2:layout_constraintTop_toTopOf="parent"
+        n2:srcCompat="?actionModeCloseDrawable" />
+</androidx.support.constraint.ConstraintLayout>

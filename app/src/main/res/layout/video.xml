@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:id="@+id/CardViewComoSeHace"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="15dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        android:background="@color/colorAccentTransparent2">
+
+        <ImageButton xmlns:n2="http://schemas.android.com/apk/res-auto"
+            n1:id="@+id/imageButton3"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignLeft="@+id/video_titulo"
+            n1:layout_alignTop="@+id/video_descripcion"
+            n1:background="@color/colorPrimaryDark"
+            n1:padding="2.0dip"
+            n1:src="@drawable/ic_menu_share" />
+
+        <ImageButton xmlns:n3="http://schemas.android.com/apk/res-auto"
+            n1:id="@+id/imageButton4"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_below="@id/imageButton3"
+            n1:layout_marginTop="8.0dip"
+            n1:layout_toLeftOf="@id/video_descripcion"
+            n1:background="@color/colorPrimary"
+            n1:padding="2.0dip"
+            n1:src="@drawable/ic_menu_slideshow"
+            n1:visibility="gone" />
+
+        <RadioButton xmlns:n4="http://schemas.android.com/apk/res-auto"
+            n1:id="@+id/video_titulo"
+            android:fontFamily="@font/eproundie"
+            n1:layout_width="258.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentTop="true"
+            n1:layout_marginLeft="8.0dip"
+            n1:layout_marginTop="8.0dip"
+            n1:checked="true"
+            n1:shadowColor="@color/colorAccent"
+            n1:text="Un video que nunca habrás visto en toda tu vida"
+            n1:textColor="@color/colorAccent2"
+            n1:textSize="15.0dip"
+            n4:layout_constraintEnd_toEndOf="parent"
+            n4:layout_constraintEnd_toStartOf="@id/switch5"
+            n4:layout_constraintHorizontal_bias="0.025"
+            n4:layout_constraintLeft_toLeftOf="parent"
+            n4:layout_constraintStart_toStartOf="parent"
+            n4:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.youtube.player.YouTubeThumbnailView xmlns:n5="http://schemas.android.com/apk/res-auto"
+            n1:id="@+id/youtubeThumb"
+            n1:layout_width="fill_parent"
+            n1:layout_height="203.0dip"
+            n1:layout_alignParentLeft="true"
+            n1:layout_below="@id/video_titulo"
+            n1:layout_marginTop="8.0dip"
+            n5:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+        <ImageView
+            n1:id="@+id/btnyoutubeplayer"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerInParent="true"
+            n1:src="@drawable/youtubeplay" />
+
+
+        <TextView xmlns:n6="http://schemas.android.com/apk/res-auto"
+            n1:id="@+id/video_descripcion"
+            android:fontFamily="@font/eproundie"
+            n1:layout_width="250.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_alignRight="@id/imageButton"
+            n1:layout_below="@id/youtubeThumb"
+            n1:layout_marginBottom="8.0dip"
+            n1:layout_marginLeft="8.0dip"
+            n1:layout_marginTop="8.0dip"
+            n1:layout_toRightOf="@id/imageButton3"
+            n1:text="25 reproducciones\n\nCARLOS EDUARDO CASTELLANOS\nLa riqueza está al alcance de todos si sabemos estar donde fluye el dinero"
+            n1:textColor="@color/colorAccent2"
+            n1:textSize="12.0dip"
+            n6:layout_constraintLeft_toRightOf="@id/imageButton3"
+            n6:layout_constraintTop_toBottomOf="@id/youtubeThumb" />
+
+        <CheckBox xmlns:n7="http://schemas.android.com/apk/res-auto"
+            n1:id="@+id/switch1"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_above="@id/youtubeThumb"
+            n1:layout_alignParentRight="true"
+            n1:layout_marginRight="8.0dip"
+            n1:checked="true"
+            n1:shadowColor="@color/colorAccent"
+            n1:text="Favorito "
+            n1:textColor="@color/colorPrimary"
+            n1:textSize="10.0dip"
+            n1:visibility="gone"
+            n7:layout_constraintRight_toRightOf="parent" />
+
+        <ImageButton
+            n1:id="@+id/imageButton"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentRight="true"
+            n1:layout_below="@id/youtubeThumb"
+            n1:layout_marginRight="8.0dip"
+            n1:layout_marginTop="8.0dip"
+            n1:background="@color/colorPrimaryDark"
+            n1:padding="2.0dip"
+            n1:src="@drawable/ic_thumb_up_black_24dp" />
+
+        <TextView
+            n1:id="@+id/txtMeGusta"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            android:fontFamily="@font/eproundie"
+            n1:textStyle="bold"
+            n1:layout_alignTop="@id/imageButton"
+            n1:layout_marginRight="7.0dip"
+            n1:layout_toLeftOf="@id/imageButton"
+            n1:text="120"
+            n1:textColor="@color/colorAccent2"
+            n1:textSize="16.0dip" />
+
+        <View xmlns:n9="http://schemas.android.com/apk/res-auto"
+            n1:layout_width="fill_parent"
+            n1:layout_height="1.0dip"
+            n1:layout_alignParentLeft="true"
+            n1:layout_below="@id/video_descripcion"
+            n1:layout_marginTop="4.0dip"
+            n1:background="#fff2f2f2"
+            n9:layout_constraintTop_toBottomOf="@+id/video_descripcion" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

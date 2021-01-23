@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:n2="http://schemas.android.com/apk/res-auto"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="@color/backgroundApp"
+    n2:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:orientation="horizontal">
+
+        <ListView
+            n1:id="@+id/temas"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

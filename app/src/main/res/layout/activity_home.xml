@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/fondo_activity"
+    tools:context=".ActivityHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingTop="@dimen/paddingTop"
+        android:paddingRight="@dimen/paddingRight">
+        <TextView
+            android:id="@+id/mensajeInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/eproundie"
+            android:paddingTop="60dp"
+            android:gravity="center"
+            android:text="@string/slogan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_compat_button_text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_registrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_home_button"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshapebordes"
+                android:fontFamily="@font/eproundie"
+                android:text="@string/registrarte"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_quienes_somos"
+                android:textStyle="bold" />
+
+
+
+            <Button
+                android:id="@+id/btn_Ingresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_home_button"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshapebordes"
+                android:fontFamily="@font/eproundie"
+                android:text="@string/ingresar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_quienes_somos"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_certificate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_home_button"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshapebordes"
+                android:fontFamily="@font/eproundie"
+                android:text="@string/ingresar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_quienes_somos"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_quees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_home_pading_button"
+            android:background="@drawable/buttonshapebordes"
+            android:fontFamily="@font/eproundie"
+            android:text="@string/queesfesi"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/app_compat_button_text_size_home"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <!---
+    <LinearLayout
+            android:id="@+id/educacioncultura"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/liner_height_home"
+            android:layout_marginTop="@dimen/margin_top_linear_home"
+            android:background="@drawable/buttonshapeeducacion"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_educacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/educacion" />
+
+            <TextView
+                android:id="@+id/txt_educacionCultura"
+                style="@style/AppTheme.MyTextRegistrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/eproundie"
+                android:padding="@dimen/padding_text_button_linear"
+                android:paddingTop="@dimen/margin_top_home_button"
+                android:text="@string/educacioncultura"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/capacitate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/liner_height_home"
+            android:layout_marginTop="@dimen/margin_top_linear_home"
+            android:background="@drawable/buttonshapecapacitate"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_capacitate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/img_button_linear"
+                android:src="@drawable/capacitate" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_top_home_button"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTheme.MyTextRegistrar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lineSpacingMultiplier="0.2"
+                    android:text="@string/capacitater"
+                    android:textSize="@dimen/app_compat_button_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/AppTheme.MyTextRegistrar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lineSpacingMultiplier="0.2"
+                    android:text="@string/empleo"
+                    android:textSize="@dimen/app_compat_button_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/salud"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/liner_height_home"
+            android:layout_marginTop="@dimen/margin_top_linear_home"
+            android:background="@drawable/buttonshapesalud"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/img_button_linear"
+                android:src="@drawable/corazon" />
+
+            <TextView
+                android:id="@+id/txt_salud"
+                style="@style/AppTheme.MyTextRegistrar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_text_button_linear"
+                android:paddingTop="@dimen/margin_top_home_button"
+                android:text="@string/salud"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_compat_button_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/animalista"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/liner_height_home"
+            android:layout_marginTop="@dimen/margin_top_linear_home"
+            android:background="@drawable/buttonshapeanimalista"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/img_button_linear"
+                android:src="@drawable/dogcat" />
+
+            <TextView
+                android:id="@+id/txt_animalista"
+                style="@style/AppTheme.MyTextRegistrar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_text_button_linear"
+                android:paddingTop="@dimen/margin_top_home_button"
+                android:text="@string/ambientalista"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_compat_button_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/testimonio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/liner_height_home"
+            android:layout_marginTop="@dimen/margin_top_linear_home"
+            android:background="@drawable/buttonshapetestimonios"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/img_button_linear"
+                android:src="@drawable/historia" />
+
+            <TextView
+                android:id="@+id/txt_testimonio"
+                style="@style/AppTheme.MyTextRegistrar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_text_button_linear"
+                android:paddingTop="@dimen/margin_top_home_button"
+                android:text="@string/testimonio"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_compat_button_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+
+
+        <include
+            android:id="@+id/includeredes"
+            layout="@layout/redes_sociales"
+            android:visibility="invisible"/>-->
+
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/colorNew2"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/colorPrimary"
+       tools:context=".ActivityHome">
+
+       <LinearLayout
+           android:id="@+id/AdLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:id="@+id/layoutDots"
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginBottom="20dp"
+                   android:gravity="center"
+                   android:orientation="horizontal" />
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_above="@id/layoutDots"
+                   android:alpha=".5"
+                   android:background="@android:color/white"
+                   android:visibility="invisible" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+
+               <include
+                   android:id="@+id/includeredes"
+                   layout="@layout/redes_sociales" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TableLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:stretchColumns="0,1">
+
+                   <TableRow>
+
+                       <Button
+                           android:id="@+id/btn_registrate"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/buttonngresar"
+                           android:fontFamily="@font/eproundie"
+                           android:text="@string/registrarte"
+                           android:textColor="@color/list_item_title"
+                           android:textSize="@dimen/text_size_quienes_somos"
+                           android:textStyle="bold" />
+
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height=".5dp"
+                           android:paddingLeft="1dip"
+                           android:paddingRight="1dip">
+
+                       </LinearLayout>
+
+                       <Button
+                           android:id="@+id/btn_Ingresar"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/buttonngresar"
+                           android:fontFamily="@font/eproundie"
+                           android:text="@string/ingresar"
+                           android:textColor="@color/list_item_title"
+                           android:textSize="@dimen/text_size_quienes_somos"
+                           android:textStyle="bold" />
+                   </TableRow>
+               </TableLayout>
+           </LinearLayout>
+       </LinearLayout>
+
+
+       <android.support.v4.view.ViewPager
+           android:id="@+id/sViewPager"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_above="@+id/AdLayout"></android.support.v4.view.ViewPager>
+
+
+    </RelativeLayout> -->

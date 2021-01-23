@@ -1,0 +1,45 @@
+<RelativeLayout
+    xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:padding="4.0dip">
+
+    <ImageView xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/tema_img"
+        n1:layout_width="70.0dip"
+        n1:layout_height="70.0dip"
+        n1:paddingLeft="10.0dip"
+        n1:paddingRight="10.0dip"
+        n2:srcCompat="@color/colorPrimaryDark" />
+
+    <TextView
+        n1:id="@+id/tema_txt"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="14.0dip"
+        n1:layout_toRightOf="@id/tema_img"
+        n1:text="Tema"
+        n1:textColor="@color/colorPrimary"
+        n1:textSize="16.0sp" />
+
+    <TextView
+        n1:id="@+id/desc_tema_txt"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignLeft="@id/tema_txt"
+        n1:layout_below="@id/tema_txt"
+        n1:text="Descripción tema"
+        n1:textColor="@color/colorAccent"
+        n1:textSize="12.0sp" />
+
+    <TextView
+        n1:id="@+id/extra_tema_txt"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_above="@id/desc_tema_txt"
+        n1:layout_alignParentRight="true"
+        n1:layout_marginRight="11.0dip"
+        n1:text="Extra"
+        n1:textColor="@color/colorAccent2"
+        n1:textSize="12.0sp" />
+</RelativeLayout>

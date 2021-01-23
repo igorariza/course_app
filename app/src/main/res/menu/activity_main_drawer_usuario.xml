@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cursos"
+            android:checked="true"
+            android:icon="@drawable/cursos"
+            android:title="@string/Vamosya" />
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/usuarioperfil"
+            android:title="@string/perfil" />
+
+        <item
+            android:id="@+id/nav_diploma"
+            android:icon="@drawable/certificados"
+            android:title="@string/certificados" />
+        <item
+            android:id="@+id/nav_bolsa"
+            android:icon="@drawable/bolsa"
+            android:title="@string/bolsa" />
+        <!--
+        <item
+            android:id="@+id/nav_facturas"
+            android:icon="@drawable/historia"
+            android:title="@string/historia" />
+
+         Sección de configuración -->
+        <item
+            android:id="@+id/configuration_section"
+            android:title="Configuración">
+            <menu>
+                <item
+                    android:id="@+id/nav_log_out"
+                    android:icon="@drawable/logout"
+                    android:title="Salir" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
