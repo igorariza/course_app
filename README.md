@@ -1,6 +1,6 @@
 # APP - Learning Education - Android Native
 
-Applicación orientada al aparendizaje y técnicas de estudio avanzadas.
+Applicación orientada al aprendizaje y técnicas de estudio avanzadas.
 
 ## Comenzando 🚀
 
