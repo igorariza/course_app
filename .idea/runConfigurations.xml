@@ -4,9 +4,12 @@
     <option name="ignoredProducers">
       <set>
         <option value="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer" />
+<<<<<<< HEAD
         <option value="org.jetbrains.plugins.gradle.execution.test.runner.AllInPackageGradleConfigurationProducer" />
         <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestClassGradleConfigurationProducer" />
         <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestMethodGradleConfigurationProducer" />
+=======
+>>>>>>> 57aef06b5aa91fd4989b78f8a8e1e5afc1f28711
       </set>
     </option>
   </component>
