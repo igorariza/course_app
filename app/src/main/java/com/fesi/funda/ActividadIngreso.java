@@ -211,7 +211,7 @@ public class ActividadIngreso extends AppCompatActivity implements GoogleApiClie
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         addGoogleToCollection(googleSignInResult);
-                        Toast.makeText(ActividadIngreso.this, "Ingresocorrecto Google " + googleSignInResult.getSignInAccount().getEmail(), Toast.LENGTH_LONG);
+                        Toast.makeText(ActividadIngreso.this, "Ingreso correcto Google " + googleSignInResult.getSignInAccount().getEmail(), Toast.LENGTH_LONG);
                         Intent intent = new Intent(ActividadIngreso.this, MainUsuario.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         hideProgressDialog();
