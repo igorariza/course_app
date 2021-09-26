@@ -30,21 +30,21 @@
             android:layout_gravity="center"
             android:src="@drawable/fesi_logo_bonton_1"/>
 
-        <com.facebook.login.widget.LoginButton
+       <!-- <com.facebook.login.widget.LoginButton
             android:id="@+id/btnFacebookIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/paddingredes"
-            android:contentDescription="@string/app_name" />
+            android:contentDescription="@string/app_name" />-->
 
-        <com.google.android.gms.common.SignInButton
+       <!-- <com.google.android.gms.common.SignInButton
             android:id="@+id/googleIngresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/paddingredes"
-            android:layout_marginBottom="@dimen/paddingredesbtn" />
+            android:layout_marginBottom="@dimen/paddingredesbtn" />-->
 
     </LinearLayout>
 
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/paddingenteBotones"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/eproundie"
         android:text="@string/siginemail"
         android:textColor="@color/white"

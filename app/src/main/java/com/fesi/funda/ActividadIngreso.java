@@ -16,7 +16,7 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
+//import com.facebook.login.widget.LoginButton;
 import com.fesi.funda.src.Usuario;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -56,7 +56,7 @@ public class ActividadIngreso extends AppCompatActivity implements GoogleApiClie
     public ProgressDialog progressDialog;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private TextInputLayout txt_inputemail, txt_inputpassword;
-    private LoginButton loginButton;
+    //private LoginButton loginButton;
     private TextView btnPolitica, txt_accionUser;
     private AppCompatButton btn_ingresar;
     private AppCompatButton btn_olvide;
@@ -82,7 +82,7 @@ public class ActividadIngreso extends AppCompatActivity implements GoogleApiClie
         botonatras();
         initialize();
         setButtonListeners();
-        loginButton.setReadPermissions(Arrays.asList(
+        /*loginButton.setReadPermissions(Arrays.asList(
                 "public_profile", "email"));//user_status, publish_actions..
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -101,7 +101,7 @@ public class ActividadIngreso extends AppCompatActivity implements GoogleApiClie
                 hideProgressDialog();
                 Toast.makeText(ActividadIngreso.this, "Algo sucedió, Vuelve a intentar", Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -113,9 +113,9 @@ public class ActividadIngreso extends AppCompatActivity implements GoogleApiClie
                         //String email = user.getEmail();
                         //String userName = user.getDisplayName();
                         //Picasso.get().load(user.getPhotoUrl()).into(imgProfile);
-                        loginButton.setVisibility(View.GONE);
+                        //loginButton.setVisibility(View.GONE);
                     } else {
-                        loginButton.setVisibility(View.VISIBLE);
+                        //loginButton.setVisibility(View.VISIBLE);
                     }
             }
         };
@@ -131,7 +131,7 @@ public class ActividadIngreso extends AppCompatActivity implements GoogleApiClie
         txt_inputpassword = (TextInputLayout) findViewById(R.id.inputpassword);
         firebaseAuth = FirebaseAuth.getInstance();
         callbackManager = CallbackManager.Factory.create();
-        loginButton = (LoginButton) findViewById(R.id.btnFacebookIn);
+        //loginButton = (LoginButton) findViewById(R.id.btnFacebookIn);
         toolbar = (Toolbar) findViewById(R.id.toolbaringresar);
         toolbar.setTitle(accionUser);
         btnPolitica = (TextView) findViewById(R.id.politica);
@@ -140,7 +140,7 @@ public class ActividadIngreso extends AppCompatActivity implements GoogleApiClie
         btn_ingresar = (AppCompatButton) findViewById(R.id.btn_registrar);
         btn_olvide = (AppCompatButton) findViewById(R.id.btn_olvide);
         btn_ingresar.setText(btnAccionUser);
-        btnIngresarGoogle = (SignInButton) findViewById(R.id.googleIngresar);
+        //btnIngresarGoogle = (SignInButton) findViewById(R.id.googleIngresar);
     }
 
     private void initialize() {
@@ -327,7 +327,7 @@ public class ActividadIngreso extends AppCompatActivity implements GoogleApiClie
             }
         });
 
-        btnIngresarGoogle.setOnClickListener(new View.OnClickListener() {
+        /*btnIngresarGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showProgressDialog();
@@ -335,7 +335,7 @@ public class ActividadIngreso extends AppCompatActivity implements GoogleApiClie
                 startActivityForResult(intent, SIGN_IN_GOOGLE_CODE);
 
             }
-        });
+        });*/
     }
     //non-singed in user reset password email
     private void sendResetPasswordEmail() {

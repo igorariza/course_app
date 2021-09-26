@@ -88,7 +88,7 @@ public class ActivityRegistro extends AppCompatActivity implements GoogleApiClie
         setButtonListeners();
         botonatras();
 
-        loginButton.setReadPermissions(Arrays.asList(
+        /*loginButton.setReadPermissions(Arrays.asList(
                 "public_profile", "email"));//user_status, publish_actions..
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -105,7 +105,7 @@ public class ActivityRegistro extends AppCompatActivity implements GoogleApiClie
             public void onError(FacebookException error) {
                 Toast.makeText(ActivityRegistro.this, "Algo malo sucedió, Vuelve a intentar", Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -117,9 +117,9 @@ public class ActivityRegistro extends AppCompatActivity implements GoogleApiClie
                         //String email = user.getEmail();
                         //String userName = user.getDisplayName();
                         //Picasso.get().load(user.getPhotoUrl()).into(imgProfile);
-                        loginButton.setVisibility(View.GONE);
+                        //loginButton.setVisibility(View.GONE);
                     } else {
-                        loginButton.setVisibility(View.VISIBLE);
+                        //loginButton.setVisibility(View.VISIBLE);
                     }
             }
         };
@@ -222,7 +222,7 @@ public class ActivityRegistro extends AppCompatActivity implements GoogleApiClie
         txt_inputpassword = (TextInputLayout) findViewById(R.id.inputpassword);
         firebaseAuth = FirebaseAuth.getInstance();
         callbackManager = CallbackManager.Factory.create();
-        loginButton = (LoginButton) findViewById(R.id.btnFacebookIn);
+        //loginButton = (LoginButton) findViewById(R.id.btnFacebookIn);
         toolbar = (Toolbar) findViewById(R.id.toolbarunete);
         toolbar.setTitle(accionUser);
         btnPolitica = (TextView) findViewById(R.id.politica);
@@ -230,7 +230,7 @@ public class ActivityRegistro extends AppCompatActivity implements GoogleApiClie
         txt_accionUser.setText(txtAccionUser);
         btn_ingresar = (AppCompatButton) findViewById(R.id.btn_registrar);
         btn_ingresar.setText(btnAccionUser);
-        btnIngresarGoogle = (SignInButton) findViewById(R.id.googleIngresar);
+        //btnIngresarGoogle = (SignInButton) findViewById(R.id.googleIngresar);
     }
 
     public void botonatras() {

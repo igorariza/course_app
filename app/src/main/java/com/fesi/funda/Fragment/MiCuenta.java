@@ -251,8 +251,8 @@ public class MiCuenta extends Fragment {
         mDatabaseMensaje.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String mensajeDeCuenta = dataSnapshot.getValue().toString();
-                title_mensaje_User.setText(mensajeDeCuenta);
+               /* String mensajeDeCuenta = dataSnapshot.getValue().toString();
+                title_mensaje_User.setText(mensajeDeCuenta);*/
             }@Override
             public void onCancelled(DatabaseError error) {
                 // Failed to read value

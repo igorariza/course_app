@@ -15,19 +15,19 @@
       },
       "oauth_client": [
         {
-          "client_id": "842239529284-jdod7eev3mfmgchr44ks55qvg0snv5fr.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.fesi.funda",
-            "certificate_hash": "e56b7452e7a04fe3144ec933b6d52fab31c1a9c3"
-          }
-        },
-        {
           "client_id": "842239529284-dmhm2eu8vlcjpjq610gib9q6t8ecbh49.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.fesi.funda",
             "certificate_hash": "07fe112e0ca1b50b1bbf9eecda6a652fa34d385f"
+          }
+        },
+        {
+          "client_id": "842239529284-jdod7eev3mfmgchr44ks55qvg0snv5fr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fesi.funda",
+            "certificate_hash": "e56b7452e7a04fe3144ec933b6d52fab31c1a9c3"
           }
         },
         {
@@ -46,12 +46,35 @@
       "api_key": [
         {
           "current_key": "AIzaSyBe2IHiFq7wJvUsnE4uRWiNIKDKNp0d1dA"
-        },
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842239529284-jfjij1eivot514vhflcjqcd2tu2m5lqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842239529284:android:fcfccc1dbd83b7ae",
+        "android_client_info": {
+          "package_name": "com.notas.interafes"
+        }
+      },
+      "oauth_client": [
         {
-          "current_key": "AIzaSyCRptIDRbXx1KL7wbzpzIBQGjj8OR4lAgk"
-        },
+          "client_id": "842239529284-jfjij1eivot514vhflcjqcd2tu2m5lqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
         {
-          "current_key": "AIzaSyANr4OmbSI9SQ18b4aORcOedWFQ6BnGKmI"
+          "current_key": "AIzaSyBe2IHiFq7wJvUsnE4uRWiNIKDKNp0d1dA"
         }
       ],
       "services": {

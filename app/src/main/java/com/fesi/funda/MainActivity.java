@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         recordar = (CheckBox) findViewById(R.id.recuerdame);
         inputEmail = (TextInputLayout) findViewById(R.id.inputtxtemail);
         inputPassword = (TextInputLayout) findViewById(R.id.inputtxtpsw);*/
-        loginButton = (LoginButton) findViewById(R.id.btnFacebookIn);
+       //loginButton = (LoginButton) findViewById(R.id.btnFacebookIn);
         callbackManager = CallbackManager.Factory.create();
         toolbar = (Toolbar) findViewById(R.id.toolbaringresar);
     }
