@@ -1,12 +1,11 @@
 apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
-    buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "com.fesi.funda"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 28
-        versionCode 9
+        versionCode 10
         versionName "1.7.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -29,6 +28,7 @@ lintOptions {
     // but continue the build even when errors are found:
     abortOnError false
 }
+    namespace 'com.fesi.funda'
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

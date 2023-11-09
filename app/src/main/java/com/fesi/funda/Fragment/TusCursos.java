@@ -1,8 +1,6 @@
 package com.fesi.funda.Fragment;
 
-import android.os.Build;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

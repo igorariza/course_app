@@ -3,7 +3,6 @@ package com.fesi.funda.src;
 
 import android.widget.ImageView;
 
-import com.squareup.picasso.RequestCreator;
 import java.io.Serializable;
 
 public class User2 implements Serializable {

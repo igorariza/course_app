@@ -1,7 +1,6 @@
 package com.fesi.funda.adapter;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Build;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -9,14 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import com.fesi.funda.R;
 import com.fesi.funda.src.Carreras;
 import com.fesi.funda.src.CircleTransform;
 import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
