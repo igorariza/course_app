@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import com.fesi.funda.src.Cursos;
 import com.fesi.funda.R;
 import com.fesi.funda.src.CircleTransform;

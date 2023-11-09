@@ -1,7 +1,6 @@
 package com.fesi.funda.src;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Carreras implements Serializable {

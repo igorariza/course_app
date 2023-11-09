@@ -10,7 +10,6 @@ import android.widget.Toast;
 import com.fesi.funda.R;
 import com.fesi.funda.src.CircleTransform;
 import com.fesi.funda.src.Cursos;
-import com.fesi.funda.src.Facultades;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
